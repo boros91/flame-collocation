@@ -4,6 +4,8 @@ Code and data for the paper
 
 > I. Boros, *Front-pinned spectral collocation for the flame problem and related ignition problems* (2026).
 
+Archived version of this repository (v1.0.0): [doi:10.5281/zenodo.23479185](https://doi.org/10.5281/zenodo.23479185)
+
 The paper studies global Chebyshev collocation for the ignition problems
 y' = y^q (1 - y), y(0) = δ, q ≥ 2 (the flame problem for q = 2), rescaled to [-1, 1].
 Two ingredients make it work for very small δ: a sinh map built on the exactly known complex
