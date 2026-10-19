@@ -35,6 +35,8 @@ see `matlab/method/README_method.txt`.
 
 ## Repository layout
 
+Note the two figure folders: `figures/` contains the plotting scripts; `figs/` contains the reference figure PDFs distributed with the paper.
+
 | Folder | Contents |
 |---|---|
 | `method/` | The method: `collocation_q.py` (sinh-mapped collocation for general q, pinned and IVP forms, damped Newton), `flame_q.py` (time function Θ_q and master profile Y_q = Θ_q⁻¹), `collocation.py` (Chebyshev differentiation matrix, barycentric interpolation, q = 2 map setup), `flame.py` (exact q = 2 solution via the Wright ω function), `arrhenius_model.py` (Arrhenius rate: time function, singularity, pinned collocation) |
@@ -62,6 +64,12 @@ The Chebfun comparison needs MATLAB and Chebfun 5.7.0 (the paper used MATLAB R20
 
 The scripts can be run from any folder, e.g. `python experiments/exp_q2.py`; they read and write
 `results/`, `tables/` and `figs/` of the repository.
+
+**The scripts overwrite the reference outputs in `results/`, `tables/` and `figs/`.** To compare a
+reproduction with the published files, run it in a fresh clone or a copy of the repository
+(or compare with `git diff` afterwards). The version used for the paper is the release v1.0.0,
+archived at [doi:10.5281/zenodo.23479185](https://doi.org/10.5281/zenodo.23479185); later
+corrections are published as new versions, not by replacing that release.
 
 | Paper | Script | Output (`results/` unless stated) |
 |---|---|---|

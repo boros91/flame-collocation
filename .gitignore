@@ -4,3 +4,15 @@ __pycache__/
 .DS_Store
 Thumbs.db
 *.asv
+# virtual environments
+.venv/
+venv/
+env/
+# logs and temporary files
+*.log
+*.tmp
+*~
+# editors
+.vscode/
+.idea/
+*.swp
