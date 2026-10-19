@@ -1,0 +1,71 @@
+q=2 delta=1e-04, N=256..512: cond pinned 3.11e+04..6.46e+04, cond IVP 5.82e+07..1.21e+08
+q=2 delta=1e-06, N=256..512: cond pinned 1.97e+06..4.15e+06, cond IVP 3.30e+11..6.98e+11
+q=2 delta=1e-08, N=256..512: cond pinned 1.43e+08..3.03e+08, cond IVP 4.80e+14..4.65e+15
+q=2 delta=1e-10, N=256..512: cond pinned 1.10e+10..2.37e+10, cond IVP 1.08e+16..4.86e+18
+q=2 delta=1e-12, N=256..512: cond pinned 9.09e+11..1.93e+12, cond IVP 1.92e+17..3.37e+18
+q=2 IVP not converged (delta, N): (1e-04,448), (1e-05,160), (1e-05,192), (1e-05,224), (1e-05,288), (1e-05,320), (1e-05,384), (1e-05,416), (1e-05,448), (1e-05,480), (1e-05,512), (1e-06,128), (1e-06,160), (1e-06,192), (1e-06,224), (1e-06,256), (1e-06,288), (1e-06,320), (1e-06,352), (1e-06,384), (1e-06,416), (1e-06,448), (1e-06,480), (1e-06,512), (1e-08,192), (1e-08,224), (1e-08,256), (1e-08,288), (1e-08,320), (1e-08,352), (1e-08,384), (1e-08,416), (1e-08,448), (1e-08,480), (1e-08,512), (1e-10,192), (1e-10,224), (1e-10,256), (1e-10,288), (1e-10,320), (1e-10,352), (1e-10,384), (1e-10,416), (1e-10,448), (1e-10,480), (1e-10,512), (1e-12,192), (1e-12,224), (1e-12,256), (1e-12,288), (1e-12,320), (1e-12,352), (1e-12,384), (1e-12,416), (1e-12,448), (1e-12,480), (1e-12,512)
+q=2 IVP converged with error > 1e-2: (1e-03,32: 0.029), (1e-04,32: 0.022), (1e-05,32: 0.034), (1e-06,32: 0.049), (1e-06,64: 0.010), (1e-06,96: 0.107), (1e-08,32: 0.090), (1e-08,64: 0.024), (1e-08,128: 0.110), (1e-08,160: 0.042), (1e-10,32: 0.138), (1e-10,64: 0.037), (1e-10,96: 0.016), (1e-10,160: 0.112), (1e-12,32: 0.186), (1e-12,64: 0.052), (1e-12,96: 0.025), (1e-12,128: 0.011)
+q=2 pinned its: [np.int64(5)]; max |y(-1)/delta-1| at N>=N_min, delta<=1e-4: 5.30e-13
+q=2 pinned/interp (interp > 1e-13): 0.850..1.006
+q=3 pinned cond: delta=1e-1 1.14e+02..2.46e+04, delta=1e-6 2.23e+11..9.94e+11; IVP cond max 3.50e+18
+q=3 pinned its != 5: (1e-05,32:6), (1e-06,32:6)
+rounding sensitivity (1 vs 2 BLAS threads, 144 runs): pinned max rel. change 5.1e-04, pinned its changed 0; IVP its changed 36, IVP convergence changed 8, IVP error changed >0.1%: 85
+2-thread run vs colloc_q2.csv: max rel. diff pinned 2.2e-16, IVP its differ 0, IVP conv differ 0
+x0/(pi mu): q=2, delta=1e-04: 2.9
+x0/(pi mu): q=2, delta=1e-06: 4.4
+x0/(pi mu): q=2, delta=1e-08: 5.9
+x0/(pi mu): q=3, delta=1e-01: 3.9
+x0/(pi mu): q=3, delta=1e-02: 33.3
+x0/(pi mu): q=3, delta=1e-03: 320.5
+x0/(pi mu): q=3, delta=1e-04: 3186.0
+x0/(pi mu): q=3, delta=1e-06: 318314.3
+AAA: Im(pole1)/Im(s*) 1.011..1.018, max |Re(pole1) - Re(s*)| 0.0038
+movable: AAA max |Re t* - exact| 0.0041, Im 3.178..3.203; Pade [40/40] max rel Re error 6.4e-04, Im 2.701..3.139; Re t* range 12.2..1e+06
+variables: 1/y its IVP:2-5, pinned:2-4; 1/y IVP error/(u/delta): 1e-02:6371.61, 1e-04:2.49, 1e-06:2.33, 1e-08:1.06, 1e-10:0.76, 1e-12:1.88
+arrhenius: pinned N>=64 its by beta 2:8-8, 3:12-12, 4:16-16, 5:20-30, 6:24-28; all conv True; N=32 failures: 5, 6
+arrhenius: pinned err/interp (N>=64) 0.57..3.12; min err by beta 2:1.6e-15, 3:1.7e-15, 4:2.2e-15, 5:2.0e-15, 6:3.4e-15
+arrhenius: IVP err range by beta 2:2.3e-14..6.8e-01 (nonconv 1), 3:1.2e-01..7.2e-01 (nonconv 0), 4:1.6e-01..7.0e-01 (nonconv 1), 5:8.7e-02..4.9e+00 (nonconv 9), 6:1.7e-01..5.0e-01 (nonconv 5); beta=2 N>=160: 2.3e-14..1.8e-12
+arrhenius: rate ratio 2:1.037, 3:0.967, 4:0.962, 5:0.990, 6:1.018; max |Im s* - pi(1-exp(-beta/alpha))| 4.4e-16; ref check max 1.7e-16; Im s*/pi 0.91792, 0.97648, 0.99326, 0.99807, 0.99945; amp f(yf)/f(0) 3.0e+03, 3.2e+05, 3.8e+07, 4.6e+09, 5.8e+11
+arrhenius checks: alpha=0 beta=4: s* quad = 1.89511783122763+3.14159265358979j  Ei formula = 1.89511783122763+3.14159265358979j  |diff| = 0.00e+00 | alpha=0 beta=6: s* quad = 1.89511776099611+3.14159265358979j  Ei formula = 1.89511776099611+3.14159265358979j  |diff| = 0.00e+00 | 
+AAA: Im(pole1)/Im(s*) 1.0113..1.0196, max |Re(pole1) - Re(s*)| 0.0038
+rate: 256-bit ratio to log rho* 0.9990..1.0105, to pi/2L 0.9759..1.0080; Arrhenius ratio to log rho* 0.9636..1.0489; q=2 d=1e-2 log rho* 0.3698 pi/2L 0.3783; max rel diff for mu<=2e-4: 0.0062
+cond q=2 pinned: row-scaled 1e-12:94..2.2e+02, 1e-10:1e+02..2.4e+02, 1e-08:1.2e+02..2.8e+02, 1e-06:1.4e+02..3.3e+02, 1e-04:1.8e+02..3.9e+02, 1e-02:2.2e+02..5e+02; overall 93.5..499
+cond q=2 IVP: row-scaled 1e-12:1.6e+07..9.4e+11, 1e-10:1.2e+08..3.8e+11, 1e-08:4.2e+08..4.7e+09, 1e-06:2.6e+07..6.1e+07, 1e-04:3.7e+05..8.7e+05, 1e-02:7.2e+03..1.7e+04; overall 7.23e+03..9.38e+11
+cond q=3 pinned: row-scaled 1e-06:95..2.2e+02, 1e-04:1.2e+02..2.8e+02, 1e-02:1.8e+02..3.7e+02; overall 95..369
+cond q=3 IVP: row-scaled 1e-06:7.8e+06..3.8e+11, 1e-04:2.5e+07..1.2e+10, 1e-02:2.4e+05..5.6e+05; overall 2.37e+05..3.82e+11
+reconstruction err_Iy/err_expIv at Nmin (pinned): 4.4..20.4; pinned defect at Nmin max 5.21e-11
+defect: IVP with err>=2e-3 defect 6.86e-10..5.75e-04; phase-error cases: q=2 d=1e-06 N=224 IVP err 9.4e-09 defect 2.58e-12; q=2 d=1e-08 N=288 IVP err 2.4e-06 defect 8.89e-12
+HP reference 256 vs 512 bits: max diff 9.8e-77
+translation mode: IVP col/pred within 2.0% for cond<3e15 (q=2 d=1e-02, q=2 d=1e-04, q=2 d=1e-06, q=2 d=1e-08, q=3 d=1e-01, q=3 d=1e-02, q=3 d=1e-03, q=3 d=1e-04); pinned col 0.9938..1.0000; smallest cond among failures 2.6e+17
+ablation: int IVP err/interp 1e-02:1.1e+01, 1e-04:2.8e+03, 1e-06:2.2e+05, 1e-08:2.0e+07, 1e-10:9.5e+08, 1e-12:6.6e+11; diff IVP err / int IVP err 1e-02:3.88, 1e-04:4.91, 1e-06:1.10, 1e-08:1.30, 1e-10:2.78, 1e-12:1.00; pinned errors (both forms) 4.4e-15..1.7e-13; max final nodal residual of converged runs 2.2e-12; unmapped int vs diff max rel err diff 9.9e-01
+robustness centre shift / (pi mu): err/interp 0.57..1.23, its 5-5, interp (1e-06,-5):1.2e-02, (1e-06,-2):2.2e-04, (1e-06,2):1.7e-04, (1e-06,5):1.2e-02, (1e-10,-5):1.5e-02, (1e-10,-2):3.2e-04, (1e-10,2):3.6e-04, (1e-10,5):1.8e-02
+robustness pin value: err/interp 0.94..1.17, its 5-5, interp (1e-06,0.05):4.7e-12, (1e-06,0.1):4.7e-12, (1e-06,0.25):4.7e-12, (1e-06,0.5):4.7e-12, (1e-06,0.75):4.7e-12, (1e-06,0.9):4.7e-12, (1e-06,0.95):4.7e-12, (1e-10,0.05):2.8e-11, (1e-10,0.1):2.8e-11, (1e-10,0.25):2.8e-11, (1e-10,0.5):2.8e-11, (1e-10,0.75):2.8e-11, (1e-10,0.9):2.8e-11, (1e-10,0.95):2.8e-11; bound max 5.26
+robustness width factor: err/interp 0.78..1.09, its 5-5, interp (1e-06,0.25):6.8e-12, (1e-06,0.5):1.2e-12, (1e-06,2):2.4e-05, (1e-06,4):2.9e-03, (1e-10,0.25):1.1e-11, (1e-10,0.5):9.7e-12, (1e-10,2):5.8e-05, (1e-10,4):5.3e-03
+residuals: runs: 794; converged: 645; same convergence flags as saved: True; same iteration counts: True; max relative change of the error: 6.4e-13
+residuals: converged runs: max final residual 5.0e-12 (differentiation scaling, relative for 1/y); last damping factor 1 in 645 of 645; last step = smallest step (no sufficient decrease): 0 runs, of which pinned 0, max residual of these nan
+residuals: by group (last step smallest):
+residuals: ablation none diff: 4 converged, max residual 1.8e-13, min last lambda 1, fallbacks 0
+residuals: ablation none int: 4 converged, max residual 2.2e-12, min last lambda 1, fallbacks 0
+residuals: ablation sinh diff: 8 converged, max residual 9.5e-14, min last lambda 1, fallbacks 8
+residuals: ablation sinh int: 9 converged, max residual 1.4e-13, min last lambda 1, fallbacks 4
+residuals: arrhenius: 142 converged, max residual 1.8e-14, min last lambda 1, fallbacks 14
+residuals: q2: 231 converged, max residual 5.8e-13, min last lambda 1, fallbacks 118
+residuals: q3: 151 converged, max residual 6.6e-14, min last lambda 1, fallbacks 80
+residuals: robustness centre shift / (pi mu): 8 converged, max residual 1.6e-14, min last lambda 1, fallbacks 0
+residuals: robustness pin value: 14 converged, max residual 1.4e-14, min last lambda 1, fallbacks 0
+residuals: robustness width factor: 8 converged, max residual 4.6e-14, min last lambda 1, fallbacks 0
+residuals: unmapped: 40 converged, max residual 5.0e-12, min last lambda 1, fallbacks 0
+residuals: variables 1/y: 12 converged, max residual 2.0e-16, min last lambda 1, fallbacks 0
+residuals: variables ln y: 8 converged, max residual 1.4e-14, min last lambda 1, fallbacks 0
+residuals: variables y: 6 converged, max residual 1.7e-15, min last lambda 1, fallbacks 21
+residuals: pinned runs on the sinh grid (all groups): 376 converged, last damping factor >= 1, smallest-step fallbacks 8, max residual 5.8e-13
+residuals: not converged: 149 runs, final residual 6.7e-16..1.1e+59
+ablation row-scaled cond2 none diff IVP: 4.8e+03..4.1e+05
+ablation row-scaled cond2 none diff pin: 8.6e+02..2.1e+08
+ablation row-scaled cond2 none int IVP: 1.7e+04..5.7e+06
+ablation row-scaled cond2 none int pin: 3.2e+03..1.1e+12
+ablation row-scaled cond2 sinh diff IVP: 1.7e+04..3.8e+11
+ablation row-scaled cond2 sinh diff pin: 2.2e+02..5.0e+02
+ablation row-scaled cond2 sinh int IVP: 1.5e+04..2.2e+12
+ablation row-scaled cond2 sinh int pin: 1.5e+04..5.9e+06
+timing: pinned solve q=2 delta=1e-10 N=384: median 0.028 s over 5 runs | environment: Intel(R) Xeon(R) Processor @ 2.10GHz; Linux-6.18.44-fc-v139-x86_64-with-glibc2.39; Python 3.13.16, NumPy 2.5.3, SciPy 1.18.1; BLAS openblas 0.3.31.dev (2 threads); openblas 0.3.34.106.0 (2 threads)

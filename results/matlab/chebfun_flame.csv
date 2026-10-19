@@ -1,0 +1,19 @@
+q,delta,mode,success,length,newton_its,maxerr,y0_rel,time_s,message
+2,0.1,ode113,1,82,0,1.44953271608017e-10,0,0.6671465,
+2,0.1,colloc_ivp,1,99,8,3.49054118942149e-13,6.68576305429269e-13,2.9670285,
+2,0.1,colloc_pin,1,94,7,5.1414428270391e-13,5.11257702839885e-13,0.7048442,
+2,0.01,ode113,1,721,0,7.25393528577811e-08,0,0.2515635,
+2,0.01,colloc_ivp,1,1377,26,0.955528123076337,0,34.9731364,Newton iteration failed. Maximum number of iterations exceeded. See help cheboppref for how to increase the number of steps allowed.
+2,0.01,colloc_pin,1,879,13,9.02400376645573e-12,3.20843351886424e-11,3.429152,
+2,0.001,ode113,1,6564,0,4.18141123126325e-06,0,0.2744026,
+2,0.001,colloc_ivp,1,3170,26,0.998606998015618,1.49213974509621e-13,126.8076584,Newton iteration failed. Maximum number of iterations exceeded. See help cheboppref for how to increase the number of steps allowed.
+2,0.001,colloc_pin,1,2,1,148.386170660622,148386.170660622,14.0279066,Newton iteration failed. Please try supplying a better initial guess via the .init field  of the chebop.
+2,0.0001,ode113,1,60313,0,0.000327481157387788,0,2.0457038,
+2,0.0001,colloc_ivp,1,2667,24,0.999864820614606,0,58.8912249,Newton iteration failed. Please try supplying a better initial guess via the .init field  of the chebop.
+2,0.0001,colloc_pin,1,2,1,1482.05986111827,14820598.6111827,13.6114973,Newton iteration failed. Please try supplying a better initial guess via the .init field  of the chebop.
+2,1e-05,ode113,1,175,0,0.893330781272425,0,4.9691276,Function not resolved using 65537 pts. Have you tried 'splitting on'?
+2,1e-05,colloc_ivp,1,2659,26,0.999986511411025,1.18178800079249e-11,61.1913289,Newton iteration failed. Maximum number of iterations exceeded. See help cheboppref for how to increase the number of steps allowed.
+2,1e-05,colloc_pin,1,2,2,9877.04503586364,987704503.586364,35.035591,Newton iteration failed. Please try supplying a better initial guess via the .init field  of the chebop.
+2,1e-06,ode113,1,267,0,0.90744434421854,0,40.935245,Function not resolved using 65537 pts. Have you tried 'splitting on'?
+2,1e-06,colloc_ivp,1,2921,26,13651.3473149969,6.50288711767644e-05,70.8294228,Newton iteration failed. Maximum number of iterations exceeded. See help cheboppref for how to increase the number of steps allowed.
+2,1e-06,colloc_pin,1,2,5,29263.8129326879,29263812932.6879,22.9129005,Newton iteration failed. Please try supplying a better initial guess via the .init field  of the chebop.

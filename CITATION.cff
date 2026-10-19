@@ -1,0 +1,19 @@
+cff-version: 1.2.0
+message: "If you use this code or data, please cite the paper and this repository."
+title: "flame-collocation: code and data for 'Front-pinned spectral collocation for the flame problem and related ignition problems'"
+type: software
+authors:
+  - family-names: Boros
+    given-names: Imre
+    affiliation: "Tiberiu Popoviciu Institute of Numerical Analysis, Romanian Academy, Cluj-Napoca, Romania"
+version: 1.0.0
+date-released: 2026-10-16
+license: MIT
+repository-code: "https://github.com/boros91/flame-collocation"
+keywords:
+  - spectral collocation
+  - sinh map
+  - interior layer
+  - flame problem
+  - initial value problem
+  - conditioning

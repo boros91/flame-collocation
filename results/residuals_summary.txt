@@ -1,0 +1,19 @@
+runs: 794; converged: 645; same convergence flags as saved: True; same iteration counts: True; max relative change of the error: 6.4e-13
+converged runs: max final residual 5.0e-12 (differentiation scaling, relative for 1/y); last damping factor 1 in 645 of 645; last step = smallest step (no sufficient decrease): 0 runs, of which pinned 0, max residual of these nan
+  by group (last step smallest): 
+  ablation none diff: 4 converged, max residual 1.8e-13, min last lambda 1, fallbacks 0
+  ablation none int: 4 converged, max residual 2.2e-12, min last lambda 1, fallbacks 0
+  ablation sinh diff: 8 converged, max residual 9.5e-14, min last lambda 1, fallbacks 8
+  ablation sinh int: 9 converged, max residual 1.4e-13, min last lambda 1, fallbacks 4
+  arrhenius: 142 converged, max residual 1.8e-14, min last lambda 1, fallbacks 14
+  q2: 231 converged, max residual 5.8e-13, min last lambda 1, fallbacks 118
+  q3: 151 converged, max residual 6.6e-14, min last lambda 1, fallbacks 80
+  robustness centre shift / (pi mu): 8 converged, max residual 1.6e-14, min last lambda 1, fallbacks 0
+  robustness pin value: 14 converged, max residual 1.4e-14, min last lambda 1, fallbacks 0
+  robustness width factor: 8 converged, max residual 4.6e-14, min last lambda 1, fallbacks 0
+  unmapped: 40 converged, max residual 5.0e-12, min last lambda 1, fallbacks 0
+  variables 1/y: 12 converged, max residual 2.0e-16, min last lambda 1, fallbacks 0
+  variables ln y: 8 converged, max residual 1.4e-14, min last lambda 1, fallbacks 0
+  variables y: 6 converged, max residual 1.7e-15, min last lambda 1, fallbacks 21
+pinned runs on the sinh grid (all groups): 376 converged, last damping factor >= 1, smallest-step fallbacks 8, max residual 5.8e-13
+not converged: 149 runs, final residual 6.7e-16..1.1e+59

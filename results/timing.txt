@@ -1,0 +1,2 @@
+pinned solve q=2 delta=1e-10 N=384: median 0.028 s over 5 runs
+environment: Intel(R) Xeon(R) Processor @ 2.10GHz; Linux-6.18.44-fc-v139-x86_64-with-glibc2.39; Python 3.13.16, NumPy 2.5.3, SciPy 1.18.1; BLAS openblas 0.3.31.dev (2 threads); openblas 0.3.34.106.0 (2 threads)
