@@ -2,7 +2,7 @@
 
 Code and data for the paper
 
-> I. Boros, *Front-pinned spectral collocation for the flame problem and related ignition problems* (2026).
+> I. Boros, *Front-pinned spectral collocation for the flame problem and related ignition problems* (2026), [arXiv:2610.27864](https://arxiv.org/abs/2610.27864).
 
 Archived version of this repository (v1.0.0): [doi:10.5281/zenodo.23479185](https://doi.org/10.5281/zenodo.23479185)
 
